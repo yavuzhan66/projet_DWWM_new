@@ -14,12 +14,17 @@ width: 120vh;
 
 
 
-.container .card{
-    position: relative;
-    left: 100px;
-    width: 500px;
-  }
+.card-container {
+   display: flex;
+  justify-content: space-around; 
+flex-wrap: wrap;
+   flex-direction: row;
+   width: 500px;
+   margin: 100px;
+ }
 
+
+ 
 
 .video-section{
     width: 120vh;
