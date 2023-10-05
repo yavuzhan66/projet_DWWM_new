@@ -311,7 +311,31 @@
           <a href="#">
             <p>&copy; 2023, MD Formation Pro</p>
         </div>
+
+        <div class="popup" id="popup-1">
+          <div class="overlay">
+  
+          </div>
+          <div class="image-popup">
+              <div onclick="closePopup()" id="closePopup" class="close-btn"> &times; </div>
+              <h1>OFFRE SPECIALE !</h1>
+  <p>Une réduction sur notre formation de SEO à seulement 299€ !!! Venez profitez de l'offre IMMEDIATEMENT ! </p>
+  <img src="/frontend/img/seo.jpg">
+  
+  
+  <label for="name">Entrez votre nom</label>
+  <input type="name" id="name" pattern="ex : yavuzhan" size="30" required />
+  
+  
+  <label for="email">Entrez votre email:</label>
+  <input type="email" id="email" pattern="jeandujardin@gmail.com" size="30" required />
+          </div>
+      </div>
+      <button onclick="togglePopup()">Open Popup</button>
+
       </footer>
+
+
 
 
 
@@ -319,5 +343,6 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript"></script>
+    <script src="script.js"></script>
   </body>
 </html>
