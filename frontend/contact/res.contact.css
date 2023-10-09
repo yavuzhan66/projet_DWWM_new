@@ -24,7 +24,6 @@ header .navbar ul{
 header .navbar li{
     border: 1px solid #fff;
 margin: 10px;
-border-radius: 10px;
 align-items: center;
 font-size: 50px;
 display: flex;
