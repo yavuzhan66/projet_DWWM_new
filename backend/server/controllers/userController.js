@@ -1,6 +1,6 @@
 const mysql = require('mysql');
 
-// Connection Pool
+// connexion bdd
 let connection = mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -82,7 +82,7 @@ exports.update = (req, res) => {
       // User the connection
       connection.query('SELECT * FROM user WHERE id = ?', [req.params.id], (err, rows) => {
         // When done with the connection, release it
-        
+
         if (!err) {
           res.render('edit-user', { rows, alert: `${first_name} has been updated.` });
         } else {
